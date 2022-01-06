@@ -45,5 +45,5 @@ jobs:
     - name: Deploy marking
       env:
         NEW_RELIC_API_KEY: ${{ secrets.NR_KEY }}
-      run: curl -X POST "https://api.newrelic.com/v2/applications/998140885/deployments.json" -H "Api-Key:$NEW_RELIC_API_KEY" -H "Content-Type:application/json" -d '{"deployment":{"revision":"'`git rev-parse HEAD`'","user":"Auto Deploy","timestamp":"'`date +'%Y-%m-%dT%H:%M:%S'Z`'"}}'
+      run: curl -X POST "https://api.newrelic.com/v2/applications/999458251/deployments.json" -H "Api-Key:$NEW_RELIC_API_KEY" -H "Content-Type:application/json" -d '{"deployment":{"revision":"'`git rev-parse HEAD`'","user":"Auto Deploy","timestamp":"'`date +'%Y-%m-%dT%H:%M:%S'Z`'"}}'
 
